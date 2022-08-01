@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="constructors">
+    <title>constructors new operator</title>
+    <script>
+        function user(userId, firstName, lastName, password, country, continent, age, accountcreated){
+          (this.userId= userId),
+            (this.firstName= firstName),
+              (this.lastName=lastName),
+               (this.password= password),
+            (this.country= country),
+             (this.continent= continent),
+             (this.age= age),
+             (this.accountcreated= accountcreated),
+            };
+            user(1001,"Eswar","shankar","12345","india","asia","25","yes");
+            console.log(user);
+            let userId= new user(1002);
+            let firstName= new user("john");
+            let lastName= new user("jack");
+            console.log(user.userId);
+            console.log(user.firstName);
+            console.log(user.lastName);
+    </script>
+</head>
+<body>
+    <h2>constructors new operator</h2>
+</body>
+</html>
